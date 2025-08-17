@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOX ĐỀ</title>
+<style>
+@font-face {
+  font-family: 'FutureTense';
+  src: url('Future Tense Regular.otf') format('opentype');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.loader {
+  width: fit-content;
+  font-size: 80px; /* Increased font size */
+  font-family: 'FutureTense', system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.box {
+  color: #0000;
+  -webkit-text-stroke: 1px rgb(192, 0, 0);
+  background: 
+    linear-gradient(-60deg, #0000 45%, rgb(192, 0, 0) 0 55%, #0000 0) 
+    0/300% 100% no-repeat text;
+  animation: l3 2s linear infinite;
+}
+
+.de {
+  color: #0000;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  background: 
+    linear-gradient(-60deg, #0000 45%, rgb(0, 0, 0) 0 55%, #0000 0) 
+    0/300% 100% no-repeat text;
+  animation: l3 2s linear infinite;
+}
+
+.coming-soon {
+  font-family: 'FutureTense', system-ui, sans-serif;
+  font-size: 24px;
+  color: rgb(192, 0, 0);
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+@keyframes l3 {
+  0% { background-position: 100% }
+  100% { background-position: 0% }
+}
+</style>
+</head>
+<body>
+
+<div class="loader">
+  <span class="box">BOX</span><span class="de">DE</span>
+</div>
+<div class="coming-soon">SAP RA MAT</div>
+
+</body>
+</html>
